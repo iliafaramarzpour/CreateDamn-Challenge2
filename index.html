@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فحش تولید کن</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <main>
+        <div class="main__overlay d-none"></div>
+        <div class="main__overlay__box d-none">
+            <div class="main__overlay__box__title" id="damn-text"></div>
+            <input type="text" name="" class="input__second d-none" placeholder="چند کاراکتر بود؟">
+            <div class="main__overlay__box__images">
+                <span onclick="SendToWhatsapp()">
+                    <img src="img/share-whatsapp-icon.png" alt="" id="whats-app-icon">
+                </span>
+                <span onclick="SendToTelegram()">
+                    <img src="img/share-telegram-icon.png" alt="" id="telegram-icon">
+                </span>
+                <span onclick="PrintPage()">
+                    <img src="img/print-icon.png" alt="" id="print-icon">
+                </span>
+            </div>
+        </div>
+        <div class="main__box">
+            <div class="damn__input">
+                <input type="text" name="" id="damn-name" onfocus="ToggleLabelForInput()"
+                    onblur="ToggleLabelForInput()">
+                <label for="damn-name" id="damn-label">اسم فوش خور رو بنویس</label>
+            </div>
+            <div class="creat__damn" id="damn-btn" onclick="CreatDamn()">
+                <img src="img/damn_btn.png" alt="">
+            </div>
+        </div>
+    </main>
+    <audio src="audio/qaudio.mp4" id="audio"></audio>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

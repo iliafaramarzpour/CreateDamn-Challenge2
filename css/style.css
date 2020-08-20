@@ -1,0 +1,221 @@
+@font-face {
+  font-family: Sahel;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Sahel/Sahel-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+* {
+  font-family: sahel;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  direction: rtl;
+}
+
+body main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .main__box {
+  margin-top: 110px;
+  width: 498px;
+  height: 302px;
+  background-color: rgba(76, 147, 255, 0.06);
+  border: 1px solid #5D7AEF;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .main__box .damn__input {
+  position: relative;
+}
+
+body main .main__box .damn__input input[type="text"] {
+  margin-top: 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid #FF29D5;
+  width: 408px;
+  height: 63px;
+  outline: none;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+body main .main__box .damn__input label {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+body main .main__box .damn__input .label__focus {
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 41, 213, 0.26);
+  padding: 3px 5px 3px 20px;
+  font-size: 10px;
+  border-radius: 5px;
+  bottom: 58px;
+}
+
+body main .main__box .creat__damn {
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+body main .main__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  --webkit-backdrop-filter: blur(4px);
+}
+
+body main .main__overlay__box {
+  width: 600px;
+  height: 360px;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 101;
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+  top: 204px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #707070;
+}
+
+body main .main__overlay__box .main__overlay__box__title {
+  background-color: #00E353;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 444px;
+  height: 88px;
+  margin-top: 56px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0024FF;
+}
+
+body main .main__overlay__box .input__second {
+  margin-top: 57px;
+  width: 444px;
+  height: 87px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #000000;
+  background-color: #DCFFE9;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  padding-right: 20px;
+}
+
+body main .main__overlay__box .input__second::-webkit-input-placeholder {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+body main .main__overlay__box .input__second:-ms-input-placeholder {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+body main .main__overlay__box .input__second::-ms-input-placeholder {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+body main .main__overlay__box .input__second::placeholder {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+body main .main__overlay__box .main__overlay__box__images {
+  width: 444px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 51px;
+}
+
+body main .main__overlay__box .main__overlay__box__images span {
+  display: inline-block;
+  cursor: pointer;
+}
+
+body .d-none {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */
