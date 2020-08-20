@@ -107,15 +107,15 @@ function CreatDamn() {
     MainOverlay.classList.remove("d-none");
     MainOverlayBox.classList.remove("d-none");
     DamnText.textContent = CreateRandomDamn();
-    // SpecialAudio.play();
+    SpecialAudio.play();
 
-    // var CheckTimerEndAudio = setInterval(function () {
-    //   if (SpecialAudio.currentTime === SpecialAudio.duration) {
-    //     SpecialAudio.currentTime = 0;
-    //     SpecialAudio.play();
-    //     clearInterval(CheckTimerEndAudio);
-    //   }
-    // }, 1000);
+    var CheckTimerEndAudio = setInterval(function () {
+      if (SpecialAudio.currentTime === SpecialAudio.duration) {
+        SpecialAudio.currentTime = 0;
+        SpecialAudio.play();
+        clearInterval(CheckTimerEndAudio);
+      }
+    }, 1000);
 
     var TimerCloseBox = setTimeout(function () {
       DamnText.classList.add("d-none");
