@@ -149,7 +149,7 @@ function CreatDamn() {
             DamnName.value = "";
             SpecialAudio.currentTime = 0;
             SpecialAudio.pause();
-          }
+          } 
         }
       };
       clearTimeout(TimerCloseBox);
